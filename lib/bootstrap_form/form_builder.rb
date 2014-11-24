@@ -265,8 +265,6 @@ module BootstrapForm
       target = (obj.class == Class) ? obj : obj.class
       target_validators = target.validators_on(attribute).map(&:class)
       target_validators.include?(
-        ActiveRecord::Validations::PresenceValidator) || 
-      target_validators.include?(
         ActiveModel::Validations::PresenceValidator)
     end
 
