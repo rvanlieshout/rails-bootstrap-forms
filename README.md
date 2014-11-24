@@ -6,10 +6,12 @@
 **Rails Bootstrap Forms** is a rails form builder that makes it super easy to integrate
 twitter bootstrap-style forms into your rails application.
 
+ATTENTION: This fork supports Rails 3.2
+
 ## Requirements
 
 * Ruby 1.9+
-* Rails 4.0+
+* Rails 3.2+
 * Twitter Bootstrap 3.0+
 
 ## Installation
