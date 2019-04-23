@@ -60,7 +60,7 @@ module BootstrapForm
       end
 
       def prepend_and_append_input(options, &block)
-        options = options.extract!(:prepend, :append)
+        options = options.extract!(:prepend, :append).delete_if { |_key, value| value.blank? }
         input = capture(&block)
 
         input = content_tag(:span, options[:prepend], class: input_group_class(options[:prepend])) + input if options[:prepend]
